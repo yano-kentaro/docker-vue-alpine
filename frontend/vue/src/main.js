@@ -6,6 +6,7 @@ import Framework7 from 'framework7/lite-bundle';
 import Framework7Vue, { registerComponents } from 'framework7-vue/bundle';
 import 'framework7/framework7-bundle.css';
 import './css/app.css';
+
 Framework7.use(Framework7Vue);
 
 const app = createApp(App).use(store).use(router).mount('#app');

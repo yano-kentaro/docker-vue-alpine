@@ -1,13 +1,32 @@
 <template>
-  <div>
-    <div id="nav">
+  <f7-app>
+    <f7-navbar>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/schedule">Schedule</router-link>
-    </div>
+    </f7-navbar>
     <router-view/>
-  </div>
+  </f7-app>
 </template>
+
+<script>
+import { 
+  f7App,
+  f7Navbar,
+  // f7NavTitle,
+  // f7Page,
+} from 'framework7-vue';
+
+export default {
+  name: 'App',
+  components: {
+    f7App,
+    f7Navbar,
+    // f7NavTitle,
+    // f7Page,
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
