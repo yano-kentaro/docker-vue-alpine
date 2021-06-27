@@ -1,9 +1,9 @@
 <template>
   <f7-app v-bind="f7params">
     <f7-navbar>
-      <f7-link href="/">Home</f7-link>|
-      <f7-link href="/about/">About</f7-link>|
-      <f7-link href="/schedule/">Schedule</f7-link>
+      <f7-link icon-f7="house" href="/"> Home</f7-link>
+      <f7-link icon-f7="doc" href="/about/">About</f7-link>
+      <f7-link icon-f7="calendar_today" href="/schedule/">Schedule</f7-link>
     </f7-navbar>
     <f7-view main url="/" />
   </f7-app>
