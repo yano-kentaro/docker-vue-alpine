@@ -13,6 +13,8 @@
     "@fullcalendar/interaction": "^5.8.0",
     "@fullcalendar/vue3": "^5.8.0",
     "core-js": "^3.6.5",
+    "framework7": "^6.0.22",
+    "framework7-vue": "^6.0.22",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
