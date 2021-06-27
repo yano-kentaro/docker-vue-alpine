@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <f7-page name="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  </f7-page>
 </template>
 
 <script>

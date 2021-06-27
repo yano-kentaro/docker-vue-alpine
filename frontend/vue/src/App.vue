@@ -1,29 +1,42 @@
 <template>
-  <f7-app>
+  <f7-app v-bind="f7params">
     <f7-navbar>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/schedule">Schedule</router-link>
+      <f7-link href="/">Home</f7-link>|
+      <f7-link href="/about/">About</f7-link>|
+      <f7-link href="/schedule/">Schedule</f7-link>
     </f7-navbar>
-    <router-view/>
+    <f7-view main url="/" />
   </f7-app>
 </template>
 
 <script>
-import { 
-  f7App,
-  f7Navbar,
-  // f7NavTitle,
-  // f7Page,
-} from 'framework7-vue';
+import Home from '@/views/Home.vue'
+import About from '@/views/About.vue'
+import Schedule from '@/views/Schedule.vue'
 
 export default {
   name: 'App',
-  components: {
-    f7App,
-    f7Navbar,
-    // f7NavTitle,
-    // f7Page,
+  data() {
+    return {
+      f7params: {
+        name: 'My Calendar',
+        id: 'com.myapp.test',
+        routes: [
+          {
+            path: '/',
+            component: Home
+          },
+          {
+            path: '/about/',
+            component: About
+          },
+          {
+            path: '/schedule/',
+            component: Schedule
+          }
+        ]
+      }
+    }
   }
 }
 </script>
@@ -35,18 +48,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>

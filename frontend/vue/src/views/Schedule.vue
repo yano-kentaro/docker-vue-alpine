@@ -1,7 +1,7 @@
 <template>
-  <div class="schedule">
+  <f7-page name="schedule">
     <Calendar />
-  </div>
+  </f7-page>
 </template>
 
 <script>
