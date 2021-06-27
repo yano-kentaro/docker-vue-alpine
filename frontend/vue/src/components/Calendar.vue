@@ -1,5 +1,7 @@
 <template>
-  <FullCalendar :options="calendarOptions" />
+  <div class="calendar">
+    <FullCalendar :options="calendarOptions" />
+  </div>
 </template>
 
 <script>
@@ -8,6 +10,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
 
 export default {
+  name: 'Calendar',
   components: {
     FullCalendar
   },
@@ -21,3 +24,4 @@ export default {
   }
 }
 </script>
+
